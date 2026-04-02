@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Welcome to the Index Page</h1>
+<p>{{ myval }}</p>
+<ul>
+    {% for item in mylist %}
+        <li>{{ item }}</li>
+    {% endfor %} 
+</ul>
+<p>Result: {{ myres }}</p>
+
+{% endblock %}
